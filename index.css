@@ -1,8 +1,11 @@
 /* Estilos Generales */
-{
+*{
     box-sizing: border-box;
-}
 
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -41,7 +44,7 @@ header{
     background-color: rgb(245,245,245);
 }
 
-header.logo{
+header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
@@ -73,7 +76,7 @@ header a:hover{
     color: blueviolet;
 }
 
-#her{
+#hero{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +89,7 @@ header a:hover{
         rgba(0,0,0.5),
         rgba(0,0,0.5)
     )
-    ,url("media/.jpg");
+    ,url("media/porsche-atardecer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -96,7 +99,10 @@ header a:hover{
     color: white;
 }
 
- 
+#hero button{
+    font-size: 1.75em;
+}
+
 #somos-qatarg .container{
     text-align: center;
     padding: 200px 12px;
@@ -112,8 +118,9 @@ header a:hover{
     padding: 100px 0px;
 }
 
-#nuestors-paquetes h2{
+#nuestros-paquetes h2{
     margin-top: 0;
+    font-size: 3.2em;
 }
 
 #nuestros-paquetes p{
@@ -121,7 +128,11 @@ header a:hover{
 }
 
 #nuestros-paquetes .carta{
-
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
 }
 
 .carta:first-child{
@@ -130,7 +141,7 @@ header a:hover{
         rgba(0,0,0.5),
         rgba(0,0,0.5)
     )
-    ,url("media/.jpg")
+    ,url("media/porsche-atardecer.jpg")
 }
 
 .carta:nth-child(2){
@@ -139,4 +150,98 @@ header a:hover{
 
 .carta:nth-child(3){
 
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Estilizado CSS Desktop */
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-qatarg .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-qatarg .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-qatarg h2{
+        margin-top: 0px;
+    }
+
+    #somos-qatarg .img-containter{
+        background-image: url("media/porsche-atardecer.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
 }
