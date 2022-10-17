@@ -1,16 +1,16 @@
 /* Estilos Generales */
 *{
     box-sizing: border-box;
-
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
-
 
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
@@ -20,28 +20,30 @@ ul{ list-style: none;}
 li{ font-size: 1.25em;}
 
 button{
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
-    border-radius: 10px;
-    border: 2px solid rgba(0,0,0.5);
-    box-shadow: 2px 2px 10px rgba(0,0,0.5);
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
     background-color: blueviolet;
 }
 
 button:hover{
-    background-color: rgb(96, 31, 157);
+    background-color: rgb(101, 33, 165);
 }
 
-/* Estilizado CSS Mobile */
 .container{
     max-width: 1400px;
     margin: auto;
 }
 
+.color-acento{ color:blueviolet; }
+
 header{
     background-color: rgb(245,245,245);
+    
 }
 
 header .logo{
@@ -52,13 +54,13 @@ header .logo{
     font-size: 1.6em;
 }
 
-header.container{
+header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header.nav{
+header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -83,11 +85,10 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    color: white;
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0.5),
-        rgba(0,0,0.5)
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
     )
     ,url("media/porsche-atardecer.jpg");
     background-repeat: no-repeat;
@@ -103,62 +104,74 @@ header a:hover{
     font-size: 1.75em;
 }
 
-#somos-qatarg .container{
+#somos-proya .container{
     text-align: center;
     padding: 200px 12px;
 }
 
-#nuestros-paquetes{
+#nuestros-programas{
     background-color: rgb(30,30,30);
     color: white;
     text-align: center;
 }
 
-#nuestros-paquetes .container{
-    padding: 100px 0px;
+#nuestros-programas .container{
+    padding: 150px 12px;
 }
 
-#nuestros-paquetes h2{
+#nuestros-programas h2{
     margin-top: 0;
     font-size: 3.2em;
 }
 
-#nuestros-paquetes p{
+#nuestros-programas p{
     display: none;
 }
 
-#nuestros-paquetes .carta{
+#nuestros-programas .carta{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    padding: 50px 0px;
+    margin: 30px;
     border-radius: 15px;
 }
 
 .carta:first-child{
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0.5),
-        rgba(0,0,0.5)
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
     )
-    ,url("media/porsche-atardecer.jpg")
+    ,url("media/Dreamer\ Garage.jfif");
+
 }
 
 .carta:nth-child(2){
-
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/full-stack.jpg");
 }
 
 .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/python.jpg");
 
 }
 
 #caracteristicas .container{
     text-align: center;
-    padding: 200px 12px;
+    padding: 250px 12px;
 }
 
 #caracteristicas li{
-    margin: 15px 0px;
+    margin: 16px 0px;
     font-weight: bold;
 }
 
@@ -182,13 +195,13 @@ header a:hover{
 }
 
 footer{
-    background: rgb(230, 230, 230);
+    background-color: rgb(230,230,230);
 }
 
 footer p{
     margin: 0;
     padding: 12px;
-    color: rgb(100, 100, 100);
+    color: rgb(100,100,100);
 }
 
 footer .container{
@@ -198,12 +211,12 @@ footer .container{
     align-items: flex-end;
 }
 
-/* Estilizado CSS Desktop */
-@media (min-width: 720px){
+@media (min-width: 850px){
     header{
         position: fixed;
         width: 100%;
     }
+
     header .container{
         flex-direction: row;
         justify-content: space-between;
@@ -219,29 +232,119 @@ footer .container{
         font-size: 5em;
     }
 
-    #somos-qatarg .container{
+    #somos-proya .container{
         display: flex;
         justify-content: space-evenly;
     }
 
-    #somos-qatarg .texto{
+    #somos-proya .texto{
         width: 50%;
         max-width: 600px;
         text-align: initial;
+        padding-left: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    #somos-qatarg h2{
+    #somos-proya h2{
         margin-top: 0px;
     }
 
-    #somos-qatarg .img-containter{
-        background-image: url("media/porsche-atardecer.jpg");
+    #somos-proya .img-container{
+        background-image: url("media/somos-proya.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
-        width: 400px;
+        width: 400px; 
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/front-end-cropped.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/full-stack-cropped.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/python-cropped.jpg");
+
+    }
+
+    #caracteristicas{
+        background-image: url("media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
     }
 }
