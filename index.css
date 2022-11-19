@@ -30,6 +30,14 @@ button{
     background-color: blueviolet;
 }
 
+#carrito-png{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
 button:hover{
     background-color: rgb(101, 33, 165);
 }
@@ -41,9 +49,13 @@ button:hover{
 
 .color-acento{ color:blueviolet; }
 
-header{
+#header{
     background-color: rgb(245,245,245);
-    
+    transition: 1.5s;
+}
+#headerOtroColor{
+    background-color: rgb(94, 94, 94);
+    transition: 1.5s;
 }
 
 header .logo{
