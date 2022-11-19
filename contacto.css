@@ -1,0 +1,39 @@
+body{background-image:url(./media/pngtree-gray-simple-gradient-background-image_557031.jpg) ;color: rgb(10, 8, 8);}
+h1{color: rgb(16, 13, 13);}
+.form-label{width: 60%;}
+p{color: rgb(17, 13, 13);}
+label{color: rgb(21, 17, 17);}
+input{color: rgb(11, 9, 9);}
+#inputNombre{width: 65%;}
+#inputDireccion{width: 65%;}
+#completa{width: 40%;}
+#valorProducto{display:none!important;}
+#listaProductos{display:none!important;}
+#menu{text-align: center;}
+.btnbtn-primar{ color: black; text-align: center;}
+a{text-align: center;}
+h2{color: rgb(14, 11, 11);text-align: center;}
+h5{color: rgb(12, 10, 10);}
+h3{color: rgb(18, 15, 15);text-align: center;}
+h4{color: rgb(15, 13, 13);text-align: center;}
+#Submit1{background-color: rgb(52, 52, 52);text-align: center;}
+#expl{text-align: center;}  
+th{color: white;}
+td{text-align: center;}
+#Radio{color:white;justify-content:space-around;word-spacing: 80PX;}
+#cant{color: white;}
+#Autos{width: 90px;float: left;}
+#volver{color: white;} 
+.btnnbtn-primary{background-color: black;color: white; position: sticky;bottom: 10px;}
+.btnnnbtn-primary{background-color: black;color: white;}
+.submit{background-color:blueviolet;color: black;height: 40px; position: sticky;}
+#carrito{position: fixed;bottom: 15px;left: 40% ;width: 300px;}
+#icalculadora{text-align: center;}
+#icono-ig{width: 40px;}
+#wapp{width: 40px;}
+.sc-10gk5i5-3{color: white; }
+.sc-10gk5i5-5{color: white;}
+.bSGoKg {padding: 0px 10px 12px;}
+input{display:inline}
+.form-control{display: inline!important;}
+tbody, td, tfoot, th, thead, tr{border-style: none!important;}
