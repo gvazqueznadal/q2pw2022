@@ -1,7 +1,6 @@
 body{background-image:url(./media/pngtree-gray-simple-gradient-background-image_557031.jpg) ;color: rgb(10, 8, 8);}
 h1{color: rgb(16, 13, 13);}
 .form-label{width: 60%;}
-p{color: rgb(17, 13, 13);}
 label{color: rgb(21, 17, 17);}
 input{color: rgb(11, 9, 9);}
 #inputNombre{width: 65%;}
@@ -22,12 +21,13 @@ th{color: white;}
 td{text-align: center;}
 #Radio{color:white;justify-content:space-around;word-spacing: 80PX;}
 #cant{color: white;}
-#Autos{width: 90px;float: left;}
+#Autos{max-height: 200px;}
 #volver{color: white;} 
 .btnnbtn-primary{background-color: black;color: white; position: sticky;bottom: 10px;}
 .btnnnbtn-primary{background-color: black;color: white;}
 .submit{background-color:blueviolet;color: black;height: 40px; position: sticky;}
 #carrito{position: fixed;bottom: 15px;left: 40% ;width: 300px;}
+#vaciar-carrito{background-color: blueviolet;color: black;}
 #icalculadora{text-align: center;}
 #icono-ig{width: 40px;}
 #wapp{width: 40px;}
@@ -37,3 +37,47 @@ td{text-align: center;}
 input{display:inline}
 .form-control{display: inline!important;}
 tbody, td, tfoot, th, thead, tr{border-style: none!important;}
+.producto{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 20px;
+    border-radius:20px;
+}
+.producto img{
+    width:100%;
+}
+.precios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.car_title{
+    color:white
+}
+.desc_producto{
+display: flex;
+color: white;
+text-align: center;
+justify-content: space-between;
+
+}
+.productos{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    width: 100%;
+    gap:5px;
+    margin-top: 20px;
+
+}
+.radioGama{
+color:white;}
+
+@media (max-width: 500px){
+    .productos{
+        grid-template-columns:   1fr;
+        margin: auto;
+        
+    }
+    
+}
