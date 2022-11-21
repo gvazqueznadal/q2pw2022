@@ -12,26 +12,24 @@
    
    <h1>Hace tu pedido en Irenko Cars</h1>
    <form action="https://formsubmit.co/2e4560749e0935f69d49253f7df4f17c" method="POST">
-    <div class="col-md-6">
-        
-  
+    <div class="datos">
+    <div class="inputs">
         <label for="inputNombre" class="form-label">Nombre y Apellido</label>
         <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Gonzalo Vazquez">
     </div>
-    <div class="col-md-6">
+    <div class="inputs">
         <label for="inputtelefono" class="form-label">Telefono</label>
         <input type="number" class="form-control" id="telefono" name="Telefono" placeholder="11 3692 8146">
-    </div>
-          </label>
-        </div><br>
-    <div class="col-sm-11">
+    </div>  
+    <div class="inputs">
         <label for="inputDireccion" class="form-label">Direccion</label>
         <input type="text" class="form-control" id="Direccion" name="Direccion" placeholder="Av. Libertador 5034 5C">
     </div>
-    
+    </div>
     <div class="col-sm-14" id="menu">  
-    <br>
+    
     <h2>Autos</h2>
+    <div class="autos">
     <a href="#porsche"><button type="button" class="btnbtn-primary" >Porsche GT3</button></a>
     <a href="#mercedes"><button type="button" class="btnbtn-primary">Mercedes Benz GT R AMG</button></a>
     <a href="#ferrari"><button type="button" class="btnbtn-primary">Ferrari 488</button></a>
@@ -47,19 +45,19 @@
             <div class="radioGama">
                 Gama Baja
                 <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$376.000
+                    <input type="radio" onclick="sumaProductos(376000, 'Gama Alta' )">$376.000
                 </p>   
             </div>
             <div class="radioGama">
                 Gama Media
                 <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$395.000
+                    <input type="radio" onclick="sumaProductos(395000, 'Gama Alta' )">$395.000
                 </p>   
             </div>
             <div class="radioGama">
                 Gama Alta
                 <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$415.000
+                    <input type="radio" onclick="sumaProductos(415000, 'Gama Alta' )">$415.000
                 </p>   
             </div>
         </div>
@@ -68,25 +66,25 @@
         <p class="car_title">Mercedes Benz GT R AMG</p>
 
         <div class="desc_producto">
-             <img src="./media/mercedesbenzgt.jpg" id="Autos" alt="PORSCHE">
+             <img src="./media/mercedesbenzgt.jpg" id="Autos" alt="MERCEDES">
         </div>
         <div class="precios">
             <div class="radioGama">
                 Gama Baja
                 <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$350.000
+                    <input type="radio" onclick="sumaProductos(350000, 'Gama Alta' )">$350.000
                 </p>   
             </div>
             <div class="radioGama">
                 Gama Media
                 <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$388.000
+                    <input type="radio" onclick="sumaProductos(388000, 'Gama Alta' )">$388.000
                 </p>   
             </div>
             <div class="radioGama">
                 Gama Alta
                 <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$412.000
+                    <input type="radio" onclick="sumaProductos(412000, 'Gama Alta' )">$412.000
                 </p>   
             </div>
         </div>
@@ -95,7 +93,7 @@
         <p class="car_title">Ferrari 488</p>
 
         <div class="desc_producto">
-             <img src="./media/ferrari488.jpg" id="Autos" alt="PORSCHE">
+             <img src="./media/ferrari488.jpg" id="Autos" alt="FERRARI">
         </div>
         <div class="precios">
             <div class="radioGama">
@@ -107,105 +105,39 @@
             <div class="radioGama">
                 Gama Media
                 <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$362.000
+                    <input type="radio" onclick="sumaProductos(362000, 'Gama Alta' )">$362.000
                 </p>   
             </div>
             <div class="radioGama">
                 Gama Alta
                 <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$401.000
+                    <input type="radio" onclick="sumaProductos(401000, 'Gama Alta' )">$401.000
                 </p>   
                 
             </div>
         </div>
     </div>
-    <div class="producto">
-        <p class="car_title">Porsche GT3</p>
-
-        <div class="desc_producto">
-             <img src="./media/mercedesbenzgt.jpg" id="Autos" alt="PORSCHE">
-        </div>
-        <div class="precios">
-            <div class="radioGama">
-                Gama Baja
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$415.000
-                </p>   
-            </div>
-            <div class="radioGama">
-                Gama Media
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$415.000
-                </p>   
-            </div>
-            <div class="radioGama">
-                Gama Alta
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$415.000
-                </p>   
-            </div>
-        </div>
-    </div>
-   
-</div>
-       <!--  <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col">Gama Alta</th>
-            <th scope="col">Gama Media</th>
-            <th scope="col">Gama Alta</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <th scope="row"><img src="./media/porsche-atardecer.jpg" id="Autos" alt="PORSCHE">
-                <h5>PORSCHE GT3</h5>
-            </th>
-              <td> <p id="Radio"><input type="radio" onclick="sumaProductos(415.000, 'Gama Alta' )">$415.000</p></td>
-              <td><P><input type="radio" onclick="sumaProductos(390000, 'Gama Media')">$390.000</P></td>
-              <td><P><input type="radio" onclick="sumaProductos(376000, 'Gama Baja')">$376.000</p></td>
-            </tr>
-            <tr>
-                <th scope="row"> <img src="./media/mercedesbenzgt.jpg" id="Autos" alt="MERCEDES">
-                    <h5>MERCEDES BENZ GT R AMG</h5>
-                </th>
-                <td> <p id="Radio"><input type="radio" onclick="sumaProductos(400000, 'Gama Alta' )" >$400.000</p></td>
-                <td><P><input type="radio" onclick="sumaProductos(375000, 'Gama Media')">$375.000</P></td>
-                <td><P><input type="radio" onclick="sumaProductos(350000, 'Gama Baja')">$350.000</p></td>
-            </tr>
-            <th scope="row"> <img src="./media/ferrari488.jpg" id="Autos" alt="FERRARI">
-                <h5>FERRARI 488</h5>
-            </th>
-                <td> <p id="Radio"><input type="radio" onclick="sumaProductos(380000, 'Gama Alta')">$380.000</p></td>
-                <td><P><input type="radio" onclick="sumaProductos(362000, 'Gama Media')">$362.000</P></td>
-                <td><P><input type="radio" onclick="sumaProductos(338000, 'Gama Baja')">$338.000</p></td>
-            </tr>
-            
-            </tr> -->
-        </tbody>
-    </table>
-   
     
 </div>
-    <div class="zona_calculadora" id="icalculadora">
-        <div class="texto_calcu"></div>
-        <div class="d-grid gap-2 col-6 mx-auto" id="carrito">
-            <button class="btnnbtn-primary" type="button" disabled>
-                <div class="zona_calculo2" id="calculadora"></div>
-                 <div id="elTotal">  CARRITO   TOTAL: 0 Pesos</div>
-                 <button type="button" id="vaciar-carrito" class="btn btn-primary " onclick="Limpiar()">Vaciar Carrito</button>
-                 <button type="submit" class="submit">Agendar Visita</button>
-            </button>   
-        </div>  
+<div class="carrito " id="carrito">
+    <button class="btnnbtn-primary" type="button" disabled>
         
-    </div>
+         <div id="elTotal">  CARRITO   TOTAL: 0 Pesos</div>
+         <button type="button" id="vaciar-carrito" class="btn btn-primary " onclick="Limpiar()">Vaciar Carrito</button>
+         <button type="submit" class="submit">Agendar Visita</button>
+    </button>   
+</div>  
+
 </form>   
+
         <script>
             let arrayProducto =[]
             let Total = 0
             function sumaProductos(Valoritem, Producto) {
+                // sums the total if the item is checked
                 arrayProducto.push(Producto)
-              Total = Total + Valoritem
+                Total = Total + Valoritem
+                
               document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + Total; 
               console.log(arrayProducto);
               document.getElementById("valorProducto").value = Total

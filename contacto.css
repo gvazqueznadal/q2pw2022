@@ -1,4 +1,8 @@
-body{background-image:url(./media/pngtree-gray-simple-gradient-background-image_557031.jpg) ;color: rgb(10, 8, 8);}
+body{background-image:url(./media/pngtree-gray-simple-gradient-background-image_557031.jpg) ;
+    color: rgb(10, 8, 8);
+    display: flex;
+    flex-direction: column;
+}
 h1{color: rgb(16, 13, 13);}
 .form-label{width: 60%;}
 label{color: rgb(21, 17, 17);}
@@ -23,10 +27,10 @@ td{text-align: center;}
 #cant{color: white;}
 #Autos{max-height: 200px;}
 #volver{color: white;} 
-.btnnbtn-primary{background-color: black;color: white; position: sticky;bottom: 10px;}
+.btnnbtn-primary{background-color: black;color: white; }
 .btnnnbtn-primary{background-color: black;color: white;}
-.submit{background-color:blueviolet;color: black;height: 40px; position: sticky;}
-#carrito{position: fixed;bottom: 15px;left: 40% ;width: 300px;}
+.submit{background-color:blueviolet;color: black;height: 40px; }
+
 #vaciar-carrito{background-color: blueviolet;color: black;}
 #icalculadora{text-align: center;}
 #icono-ig{width: 40px;}
@@ -37,9 +41,9 @@ td{text-align: center;}
 input{display:inline}
 .form-control{display: inline!important;}
 tbody, td, tfoot, th, thead, tr{border-style: none!important;}
+
 .producto{
-    display: flex;
-    flex-direction: column;
+    
     background: black;
     padding: 20px;
     border-radius:20px;
@@ -62,10 +66,12 @@ justify-content: space-between;
 
 }
 .productos{ 
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    width: 100%;
+    
     gap:5px;
     margin-top: 20px;
 
@@ -79,5 +85,44 @@ color:white;}
         margin: auto;
         
     }
+    
+}
+.datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.inputs{
+    width: 80%;
+    max-width: 700px;
+   
+}
+
+.autos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carrito{
+    display:grid;
+    align-self: center;
+    
+    gap: 10px;
     
 }
