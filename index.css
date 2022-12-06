@@ -116,31 +116,31 @@ header a:hover{
     font-size: 1.75em;
 }
 
-#somos-proya .container{
+#somos-irenko .container{
     text-align: center;
     padding: 200px 12px;
 }
 
-#nuestros-programas{
+#nuestros-autos{
     background-color: rgb(30,30,30);
     color: white;
     text-align: center;
 }
 
-#nuestros-programas .container{
+#nuestros-autos .container{
     padding: 150px 12px;
 }
 
-#nuestros-programas h2{
+#nuestros-autos h2{
     margin-top: 0;
     font-size: 3.2em;
 }
 
-#nuestros-programas p{
+#nuestros-autos p{
     display: none;
 }
 
-#nuestros-programas .carta{
+#nuestros-autos .carta{
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
@@ -244,12 +244,12 @@ footer .container{
         font-size: 5em;
     }
 
-    #somos-proya .container{
+    #somos-irenko .container{
         display: flex;
         justify-content: space-evenly;
     }
 
-    #somos-proya .texto{
+    #somos-irenko .texto{
         width: 50%;
         max-width: 600px;
         text-align: initial;
@@ -259,11 +259,11 @@ footer .container{
         justify-content: center;
     }
 
-    #somos-proya h2{
+    #somos-irenko h2{
         margin-top: 0px;
     }
 
-    #somos-proya .img-container{
+    #somos-irenko .img-container{
         background-image: url("media/cb51098501e0e89b33ee6a20e482d3f6.jpg");
         background-size: cover;
         background-position: center center;
@@ -271,25 +271,25 @@ footer .container{
         width: 450px; 
     }
 
-    #nuestros-programas .programas{
+    #nuestros-autos .programas{
         display: flex;
         justify-content: center;
     }
 
-    #nuestros-programas p{
+    #nuestros-autos p{
         display: block;
         margin-bottom: 30px;
     }
 
-    #nuestros-programas h2{
+    #nuestros-autos h2{
         font-size: 4em;
     }
 
-    #nuestros-programas h3{
+    #nuestros-autos h3{
         margin-top: 0;
     }
 
-    #nuestros-programas .carta{
+    #nuestros-autos .carta{
         padding: 50px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
