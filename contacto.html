@@ -11,149 +11,73 @@
 <header id="header">
     <div class="container">
         <a class="logo" href="index.html">IRENKO</a>
-        <nav>
-            <a href="#somos-irenko">Quienes Somos</a>
-            <a href="#nuestros-autos">Nuestros autos</a>
-            <a href="#caracteristicas">Características</a>
-        </nav>
     </div>
 </header>
 <body>
    
    <h1 class="headerIrenko">Hace tu pedido en Irenko Cars</h1>
-   <!-- <form action="https://formsubmit.co/gvazqueznadal@itba.edu.ar" method="POST"></form> -->
-    <div class="datos">
-    <div class="inputs">
-        <label for="inputNombre" class="form-label">Nombre y Apellido</label>
-        <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Gonzalo Vazquez">
-    </div>
-    <div class="inputs">
-        <label for="inputtelefono" class="form-label">Telefono</label>
-        <input type="number" class="form-control" id="telefono" name="Telefono" placeholder="11 3692 8146">
-    </div>  
-    <div class="inputs">
-        <label for="inputDireccion" class="form-label">Direccion</label>
-        <input type="text" class="form-control" id="Direccion" name="Direccion" placeholder="Av. Libertador 5034 5C">
-    </div>
-    </div>
-    <div class="col-sm-14" id="menu">  
-    
-    <h2>Autos disponibles</h2>
-<div class="productos">
-    <div class="producto">
-        <p class="car_title">Porsche GT3</p>
-        <div class="desc_producto">
-             <img src="./media/porsche.jpg" id="Autos" alt="PORSCHE">
-        </div>
-        <div class="precios">
-            <div class="radioGama">
-                Gama Baja
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(376000, 'Gama Alta' )">$376.000
-                </p>   
-            </div>
-            <div class="radioGama">
-                Gama Media
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(395000, 'Gama Alta' )">$395.000
-                </p>   
-            </div>
-            <div class="radioGama">
-                Gama Alta
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(415000, 'Gama Alta' )">$415.000
-                </p>   
-            </div>
-        </div>
-    </div>
-    <div class="producto">
-        <p class="car_title">Mercedes Benz GT R AMG</p>
-
-        <div class="desc_producto">
-             <img src="./media/mercedesbenzgt.jpg" id="Autos" alt="MERCEDES">
-        </div>
-        <div class="precios">
-            <div class="radioGama">
-                Gama Baja
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(350000, 'Gama Alta' )">$350.000
-                </p>   
-            </div>
-            <div class="radioGama">
-                Gama Media
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(388000, 'Gama Alta' )">$388.000
-                </p>   
-            </div>
-            <div class="radioGama">
-                Gama Alta
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(412000, 'Gama Alta' )">$412.000
-                </p>   
-            </div>
-        </div>
-    </div>
-    <div class="producto">
-        <p class="car_title">Ferrari 488</p>
-
-        <div class="desc_producto">
-             <img src="./media/ferrari488.jpg" id="Autos" alt="FERRARI">
-        </div>
-        <div class="precios">
-            <div class="radioGama">
-                Gama Baja
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(334000, 'Gama Alta' )">$334.000
-                </p>   
-            </div>
-            <div class="radioGama">
-                Gama Media
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(362000, 'Gama Alta' )">$362.000
-                </p>   
-            </div>
-            <div class="radioGama">
-                Gama Alta
-                <p id="Radio">
-                    <input type="radio" onclick="sumaProductos(401000, 'Gama Alta' )">$401.000
-                </p>   
-                
-            </div>
-        </div>
-    </div>
-    
-</div>
-<div class="carrito " id="carrito">
-    <button class="btnnbtn-primary" type="button" disabled>
+   <div class="contenedorForm">
+       <form action="https://formsubmit.co/gvazqueznadal@itba.edu.ar" method="POST" class="formulario">
         
-         <div id="elTotal">  CARRITO   TOTAL: 0 Pesos</div>
-         <button type="button" id="vaciar-carrito" class="btn btn-primary " onclick="Limpiar()">Vaciar Carrito</button>
-         <button type="submit" class="submit">Agendar Visita</button>
-    </button>   
-</div>  
+            <div class="datos">
+                <div class="inputs">
+                    <label for="inputNombre" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Gonzalo Vazquez">
+                </div>
+                <div class="inputs">
+                    <label for="inputtelefono" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="telefono" name="Telefono" placeholder="11 3692 8146">
+                </div>
+                <div class="inputs">
+                    <label for="inputDireccion" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="Direccion" name="Direccion" placeholder="Av. Libertador 5034 5C">
+                </div>
+            </div>
+            <div class="col-sm-14" id="menu">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
 
-</form>   
+        <h2>Autos disponibles</h2>
+       <div class="productos">
+        <div class="col-md-12" id="autos">
+        </div>
+        
+       </div>
+       
+       </form>
+   </div> 
 
-        <script>
-            let arrayProducto =[]
-            let Total = 0
-            function sumaProductos(Valoritem, Producto) {
-                // sums the total if the item is checked
-                arrayProducto.push(Producto)
-                Total = Total + Valoritem
-                
-              document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + Total; 
-              console.log(arrayProducto);
-              document.getElementById("valorProducto").value = Total
-              document.getElementById("listaProductos").value=arrayProducto
-              return Total}
-        
-            function Limpiar() {
-              Total=0
-              document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + 0; }
-        
-        </script>
     </div>
    
+
+
+<main class="container">
+   
+
+    <div class="row g-5">
+   <h1 class="headerIrenko">Tus autos favoritos</h1>
+
+        <!-- Columna con filtros y ordenamientos -->
+        <div class="col-md-12">
+            <div class="position-sticky" style="top: 5.5rem">
+                <div class="p-4" id="favoritos">
+                </div>
+                <div class="p-4">
+                    <h4 class="fst-italic" id="subtotalcompra"> </h4>
+                </div>
+                <div class="p-4">
+                    <form action="https://formsubmit.co/gvazqueznadal@itba.edu.ar" method="POST" >
+                        <input type="hidden" id="datosAuto">
+                        <button  class="btn btn-secondary w-100 fincompra" id="fincompra" type="submit"> Agendar Visita </button> 
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <script src="index.js" type="module"></script>
 </body>
 </html>
